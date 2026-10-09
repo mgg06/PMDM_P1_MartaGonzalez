@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dear Aiko</string>
+    <string name="nueva_promesa">New promise</string>
+    <string name="guardar_bloquear">Save and lock</string>
+    <string name="escribe_sientes">Write what you feel, a promise, a vent...</string>
+    <string name="elegir_fecha">Choose opening date\n(dd/mm/yyyy)</string>
+    <string name="para_mi_yo">For my 2027 self</string>
+    <string name="promesa_ano_nuevo">New Year\'s promise</string>
+    <string name="desahogo_hoy">A vent from today</string>
+    <string name="texto_ejemplo_aiko">"Dear Aiko, today I felt tired, but writing to you made me feel lighter. I send you a..."</string>
+    <string name="fecha_desbloqueo">Unlock: %1$s</string>
+    <string name="fecha_desbloqueada">Unlocked: %1$s</string>
+    <string-array name="categorias_mensajes">
+        <item>Vent</item>
+        <item>Promise</item>
+        <item>Letter to the future</item>
+        <item>Fleeting thought</item>
+    </string-array>
+    <string name="desc_boton_anadir">Button to add a new promise or vent</string>
+    <string name="desc_icono_candado">Padlock icon indicating if the promise is locked</string>
+    <string name="desc_icono_calendario">Open calendar to choose date</string>
+    <plurals name="dias_restantes">
+        <item quantity="one">1 day left to open</item>
+        <item quantity="other">%1$d days left to open</item>
+    </plurals>
+</resources>
