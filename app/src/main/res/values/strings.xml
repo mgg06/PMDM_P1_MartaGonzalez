@@ -1,3 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PMDM_P1_MartaGonzalez</string>
+    <!-- Nombre de la app -->
+    <string name="app_name">Querida Aiko</string>
+
+    <!-- Textos de la interfaz del diseño -->
+    <string name="nueva_promesa">Nueva promesa</string>
+    <string name="guardar_bloquear">Guardar y bloquear</string>
+    <string name="escribe_sientes">Escribe lo que sientes, una promesa, un desahogo...</string>
+    <string name="elegir_fecha">Elegir fecha de apertura\n(dd/mm/aaaa)</string>
+    <string name="para_mi_yo">Para mi yo de 2027</string>
+    <string name="promesa_ano_nuevo">Promesa de año nuevo</string>
+    <string name="desahogo_hoy">Un desahogo de hoy</string>
+    <string name="texto_ejemplo_aiko">"Querida Aiko, hoy me sentí cansada, pero al escribirte me sentí más ligera. Te mando un..."</string>
+
+    <!-- Uso de parámetro (%1$s) -->
+    <string name="fecha_desbloqueo">Desbloqueo: %1$s</string>
+    <string name="fecha_desbloqueada">Desbloqueada: %1$s</string>
+
+    <!-- Uso de string-array -->
+    <string-array name="categorias_mensajes">
+        <item>Desahogo</item>
+        <item>Promesa</item>
+        <item>Carta al futuro</item>
+        <item>Pensamiento fugaz</item>
+    </string-array>
+
+    <!--  Accesibilidad (Content Descriptions para iconos) -->
+    <string name="desc_boton_anadir">Botón para añadir una nueva promesa o desahogo</string>
+    <string name="desc_icono_candado">Icono de candado que indica si la promesa está bloqueada</string>
+    <string name="desc_icono_calendario">Abrir el calendario para elegir fecha</string>
+
+    <!-- Uso de Plurales -->
+    <plurals name="dias_restantes">
+        <item quantity="one">Falta 1 día para abrir</item>
+        <item quantity="other">Faltan %1$d días para abrir</item>
+    </plurals>
 </resources>
