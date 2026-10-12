@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="color_fondo_principal">#15192B</color>
-    <color name="color_superficie_tarjeta">#22273D</color>
-    <color name="color_boton_accion">#FFB6C1</color>
-    <color name="color_texto_primario">#FFFFFF</color>
-    <color name="color_texto_secundario">#A0AAB2</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
+    <color name="color_fondo_principal">#121420</color> <!-- Para el fondo base oscuro -->
+    <color name="color_fondo_tarjetas">#CC1A1F36</color> <!-- Azul translúcido de las tarjetas -->
+    <color name="color_fondo_desahogo">#4D000000</color> <!-- Fondo oscurecido para la caja de texto -->
+    <color name="color_acento_interfaz">#FFB6C1</color> <!-- Rosa para el botón flotante y candados -->
+    <color name="color_texto_primario">#FFFFFF</color> <!-- Blanco para títulos -->
+    <color name="color_texto_secundario">#A0A3B5</color> <!-- Gris azulado para fechas -->
 </resources>

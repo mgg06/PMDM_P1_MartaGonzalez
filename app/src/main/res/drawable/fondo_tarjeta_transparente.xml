@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Usa el color de tarjeta de la paleta -->
+    <solid android:color="@color/color_fondo_tarjetas" />
+    <!-- Borde muy finito y sutil -->
+    <stroke android:width="1dp" android:color="#4DFFFFFF" />
+    <!-- Bordes redondeados -->
+    <corners android:radius="12dp" />
+</shape>

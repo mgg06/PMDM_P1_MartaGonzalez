@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_noche">
+
+    <!-- BARRA SUPERIOR -->
+    <LinearLayout
+        android:id="@+id/top_bar_promesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_fondo_principal"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="20dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_flecha"
+            app:tint="@color/color_texto_primario"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            style="@style/EstiloTituloAiko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="@string/nueva_promesa" />
+    </LinearLayout>
+
+    <!-- ZONA CENTRAL DE RELLENO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/top_bar_promesa"
+        app:layout_constraintBottom_toTopOf="@id/btn_guardar_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CAJA DE TEXTO GRANDE -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@drawable/fondo_tarjeta_transparente"
+                android:padding="24dp"
+                android:gravity="top|start"
+                android:hint="@string/escribe_sientes"
+                android:textColorHint="@color/color_texto_secundario"
+                android:textColor="@color/color_texto_primario"
+                style="@style/EstiloTextoSecundario"
+                android:layout_marginBottom="24dp" />
+
+            <!-- BOTÓN DE CALENDARIO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_tarjeta_transparente"
+                android:orientation="horizontal"
+                android:padding="24dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/EstiloTituloAiko"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="@string/elegir_fecha" />
+
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_icono_superior"
+                    android:padding="12dp"
+                    app:tint="@color/color_acento_interfaz"
+                    android:src="@drawable/ic_calendario" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTÓN FINAL DE GUARDAR -->
+    <LinearLayout
+        android:id="@+id/btn_guardar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_boton_rosa"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="24dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            style="@style/EstiloTituloAiko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/color_fondo_principal"
+            android:textSize="24sp"
+            android:text="@string/guardar_bloquear" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_icono_oscuro"
+            android:padding="12dp"
+            app:tint="@color/color_acento_interfaz"
+            android:src="@drawable/ic_candado" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Títulos con Londrina Solid -->
+    <style name="EstiloTituloAiko">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/color_texto_primario</item>
+        <item name="android:fontFamily">@font/londrina_solid</item>
+    </style>
+
+    <!-- Textos con Inder -->
+    <style name="EstiloTextoSecundario">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_texto_secundario</item>
+        <item name="android:fontFamily">@font/inder_regular</item>
+    </style>
+
+    <!-- Magia para forzar que el botón sea un círculo perfecto -->
+    <style name="EstiloFABRedondo">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
