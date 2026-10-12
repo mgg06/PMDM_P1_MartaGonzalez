@@ -26,7 +26,9 @@
             android:src="@drawable/ic_flecha"
             app:tint="@color/color_texto_primario"
             android:clickable="true"
-            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         <TextView
             style="@style/EstiloTituloAiko"
@@ -58,6 +60,8 @@
                 android:padding="@dimen/padding_interno_tarjeta"
                 android:gravity="top|start"
                 android:hint="@string/escribe_sientes"
+                android:inputType="textMultiLine|textCapSentences"
+                android:importantForAutofill="no"
                 android:textColorHint="@color/color_texto_secundario"
                 android:textColor="@color/color_texto_primario"
                 style="@style/EstiloTextoSecundario"
@@ -72,6 +76,7 @@
                 android:padding="@dimen/padding_interno_tarjeta"
                 android:gravity="center_vertical"
                 android:clickable="true"
+                android:focusable="true"
                 android:foreground="?attr/selectableItemBackground">
 
                 <TextView
@@ -88,7 +93,8 @@
                     android:background="@drawable/bg_icono_superior"
                     android:padding="@dimen/padding_icono_calendario"
                     app:tint="@color/color_acento_interfaz"
-                    android:src="@drawable/ic_calendario" />
+                    android:src="@drawable/ic_calendario"
+                    android:contentDescription="@string/desc_icono_calendario" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
@@ -106,6 +112,7 @@
         android:paddingHorizontal="@dimen/padding_horizontal_boton_guardar"
         android:gravity="center"
         android:clickable="true"
+        android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -124,7 +131,8 @@
             android:background="@drawable/bg_icono_oscuro"
             android:padding="@dimen/padding_icono_candado_guardar"
             app:tint="@color/color_acento_interfaz"
-            android:src="@drawable/ic_candado" />
+            android:src="@drawable/ic_candado"
+            android:contentDescription="@string/desc_icono_candado" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

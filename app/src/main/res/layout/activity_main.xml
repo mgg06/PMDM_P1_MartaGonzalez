@@ -31,7 +31,8 @@
             android:layout_width="@dimen/tamano_icono_corazon"
             android:layout_height="@dimen/tamano_icono_corazon"
             android:layout_marginStart="@dimen/margen_inicio_corazon"
-            android:src="@drawable/ic_corazon_titulo" />
+            android:src="@drawable/ic_corazon_titulo"
+            android:importantForAccessibility="no" />
 
         <Space
             android:layout_width="0dp"
@@ -46,6 +47,8 @@
             android:padding="@dimen/padding_icono_superior"
             android:src="@drawable/ic_lupa"
             android:clickable="true"
+            android:focusable="true"
+            android:importantForAccessibility="no"
             android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         <ImageView
@@ -56,7 +59,9 @@
             android:padding="@dimen/padding_icono_superior"
             android:src="@drawable/ic_traductor"
             android:clickable="true"
-            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         <ImageView
             android:layout_width="@dimen/tamano_boton_superior"
@@ -65,7 +70,9 @@
             android:padding="@dimen/padding_icono_superior"
             android:src="@drawable/ic_ajustes"
             android:clickable="true"
-            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+            android:focusable="true"
+            android:importantForAccessibility="no"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
     </LinearLayout>
 
     <ScrollView
@@ -93,6 +100,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="@dimen/margen_inferior_tarjeta"
                 android:clickable="true"
+                android:focusable="true"
                 android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
@@ -121,7 +129,8 @@
                     android:layout_width="@dimen/tamano_icono_tarjeta"
                     android:layout_height="@dimen/tamano_icono_tarjeta"
                     app:tint="@color/color_acento_interfaz"
-                    android:src="@drawable/ic_candado" />
+                    android:src="@drawable/ic_candado"
+                    android:contentDescription="@string/desc_icono_candado" />
             </LinearLayout>
 
             <!-- TARJETA 2 -->
@@ -134,6 +143,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="@dimen/margen_inferior_tarjeta"
                 android:clickable="true"
+                android:focusable="true"
                 android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
@@ -162,7 +172,8 @@
                     android:layout_width="@dimen/tamano_icono_tarjeta"
                     android:layout_height="@dimen/tamano_icono_tarjeta"
                     app:tint="@color/color_acento_interfaz"
-                    android:src="@drawable/ic_candado" />
+                    android:src="@drawable/ic_candado"
+                    android:contentDescription="@string/desc_icono_candado" />
             </LinearLayout>
 
             <!-- TARJETA 3 -->
@@ -173,6 +184,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/padding_interno_tarjeta"
                 android:clickable="true"
+                android:focusable="true"
                 android:foreground="?attr/selectableItemBackground">
 
                 <LinearLayout
@@ -207,7 +219,8 @@
                         android:layout_width="@dimen/tamano_icono_tarjeta"
                         android:layout_height="@dimen/tamano_icono_tarjeta"
                         app:tint="@color/color_acento_interfaz"
-                        android:src="@drawable/ic_carta" />
+                        android:src="@drawable/ic_carta"
+                        android:importantForAccessibility="no" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -236,6 +249,7 @@
         app:backgroundTint="@color/color_acento_interfaz"
         app:tint="@color/color_texto_primario"
         android:src="@drawable/ic_mas"
+        android:contentDescription="@string/desc_boton_anadir"
         app:shapeAppearanceOverlay="@style/EstiloFABRedondo"
         app:fabCustomSize="@dimen/tamano_boton_flotante"
         app:maxImageSize="@dimen/tamano_icono_flotante"
