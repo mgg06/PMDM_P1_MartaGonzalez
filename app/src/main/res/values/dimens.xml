@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Medidas de la barra superior (compartidas) -->
+    <dimen name="padding_horizontal_barra">24dp</dimen>
+    <dimen name="padding_top_barra">32dp</dimen>
+    <dimen name="padding_bottom_barra">20dp</dimen>
+    <dimen name="texto_titulo_barra">26sp</dimen>
+    <dimen name="tamano_icono_corazon">24dp</dimen>
+    <dimen name="margen_inicio_corazon">8dp</dimen>
+    <dimen name="tamano_boton_superior">40dp</dimen>
+    <dimen name="margen_entre_iconos_superiores">12dp</dimen>
+    <dimen name="padding_icono_superior">10dp</dimen>
+
+    <!-- Medidas del listado y tarjetas (activity_main) -->
+    <dimen name="padding_top_lista">24dp</dimen>
+    <dimen name="padding_bottom_lista">120dp</dimen>
+    <dimen name="padding_horizontal_lista">20dp</dimen>
+    <dimen name="padding_interno_tarjeta">24dp</dimen>
+    <dimen name="margen_inferior_tarjeta">20dp</dimen>
+    <dimen name="margen_superior_fecha">6dp</dimen>
+    <dimen name="tamano_icono_tarjeta">44dp</dimen>
+    <dimen name="margen_superior_desahogo">16dp</dimen>
+    <dimen name="padding_interno_desahogo">16dp</dimen>
+
+    <!-- Medidas del botón flotante (FAB) -->
+    <dimen name="margen_boton_flotante">28dp</dimen>
+    <dimen name="tamano_boton_flotante">68dp</dimen>
+    <dimen name="tamano_icono_flotante">32dp</dimen>
+
+    <!-- Medidas de la pantalla Nueva Promesa (activity_nueva_promesa) -->
+    <dimen name="tamano_icono_flecha">28dp</dimen>
+    <dimen name="margen_fin_flecha">16dp</dimen>
+    <dimen name="texto_titulo_nueva_promesa">32sp</dimen>
+    <dimen name="padding_general_formulario">24dp</dimen>
+    <dimen name="altura_caja_redaccion">280dp</dimen>
+    <dimen name="margen_inferior_caja_texto">24dp</dimen>
+    <dimen name="texto_elegir_fecha">20sp</dimen>
+    <dimen name="tamano_icono_calendario">54dp</dimen>
+    <dimen name="padding_icono_calendario">12dp</dimen>
+    <dimen name="margen_horizontal_boton_guardar">24dp</dimen>
+    <dimen name="margen_inferior_boton_guardar">32dp</dimen>
+    <dimen name="padding_vertical_boton_guardar">16dp</dimen>
+    <dimen name="padding_horizontal_boton_guardar">24dp</dimen>
+    <dimen name="margen_fin_texto_guardar">16dp</dimen>
+    <dimen name="texto_boton_guardar">24sp</dimen>
+    <dimen name="tamano_icono_candado_guardar">48dp</dimen>
+    <dimen name="padding_icono_candado_guardar">12dp</dimen>
+
+    <!-- Tamaños base de los estilos (styles.xml) -->
+    <dimen name="texto_estilo_titulo_aiko">22sp</dimen>
+    <dimen name="texto_estilo_secundario">16sp</dimen>
+</resources>

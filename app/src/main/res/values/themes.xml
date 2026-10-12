@@ -1,8 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PMDM_P1_MartaGonzalez" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/color_acento_interfaz</item>
+        <item name="colorSecondary">@color/color_fondo_tarjetas</item>
+        <item name="android:windowBackground">@color/color_fondo_principal</item>
+        <item name="android:statusBarColor">@color/color_fondo_principal</item>
+        <item name="android:navigationBarColor">@color/color_fondo_principal</item>
+        <item name="android:textColorPrimary">@color/color_texto_primario</item>
+        <item name="android:textColorSecondary">@color/color_texto_secundario</item>
     </style>
 
     <style name="Theme.PMDM_P1_MartaGonzalez" parent="Base.Theme.PMDM_P1_MartaGonzalez" />

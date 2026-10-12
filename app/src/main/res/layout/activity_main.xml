@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/color_fondo_principal"
-        android:paddingHorizontal="24dp"
-        android:paddingTop="32dp"
-        android:paddingBottom="20dp"
+        android:paddingHorizontal="@dimen/padding_horizontal_barra"
+        android:paddingTop="@dimen/padding_top_barra"
+        android:paddingBottom="@dimen/padding_bottom_barra"
         android:gravity="center_vertical"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,13 +24,13 @@
             style="@style/EstiloTituloAiko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="26sp"
+            android:textSize="@dimen/texto_titulo_barra"
             android:text="@string/app_name" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="@dimen/tamano_icono_corazon"
+            android:layout_height="@dimen/tamano_icono_corazon"
+            android:layout_marginStart="@dimen/margen_inicio_corazon"
             android:src="@drawable/ic_corazon_titulo" />
 
         <Space
@@ -39,30 +39,30 @@
             android:layout_weight="1" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="12dp"
+            android:layout_width="@dimen/tamano_boton_superior"
+            android:layout_height="@dimen/tamano_boton_superior"
+            android:layout_marginEnd="@dimen/margen_entre_iconos_superiores"
             android:background="@drawable/bg_icono_superior"
-            android:padding="10dp"
+            android:padding="@dimen/padding_icono_superior"
             android:src="@drawable/ic_lupa"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="12dp"
+            android:layout_width="@dimen/tamano_boton_superior"
+            android:layout_height="@dimen/tamano_boton_superior"
+            android:layout_marginEnd="@dimen/margen_entre_iconos_superiores"
             android:background="@drawable/bg_icono_superior"
-            android:padding="10dp"
+            android:padding="@dimen/padding_icono_superior"
             android:src="@drawable/ic_traductor"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackgroundBorderless"/>
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/tamano_boton_superior"
+            android:layout_height="@dimen/tamano_boton_superior"
             android:background="@drawable/bg_icono_superior"
-            android:padding="10dp"
+            android:padding="@dimen/padding_icono_superior"
             android:src="@drawable/ic_ajustes"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackgroundBorderless"/>
@@ -72,8 +72,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:clipToPadding="false"
-        android:paddingTop="24dp"
-        android:paddingBottom="120dp"
+        android:paddingTop="@dimen/padding_top_lista"
+        android:paddingBottom="@dimen/padding_bottom_lista"
         app:layout_constraintTop_toBottomOf="@id/top_bar"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -81,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="20dp">
+            android:paddingHorizontal="@dimen/padding_horizontal_lista">
 
             <!-- TARJETA 1 -->
             <LinearLayout
@@ -89,9 +89,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/fondo_tarjeta_transparente"
                 android:orientation="horizontal"
-                android:padding="24dp"
+                android:padding="@dimen/padding_interno_tarjeta"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/margen_inferior_tarjeta"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground">
 
@@ -112,14 +112,14 @@
                         style="@style/EstiloTextoSecundario"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="@dimen/margen_superior_fecha"
                         android:text="@string/fecha_desbloqueo"
                         tools:text="Desbloqueo: 15/05/2027" />
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="44dp"
-                    android:layout_height="44dp"
+                    android:layout_width="@dimen/tamano_icono_tarjeta"
+                    android:layout_height="@dimen/tamano_icono_tarjeta"
                     app:tint="@color/color_acento_interfaz"
                     android:src="@drawable/ic_candado" />
             </LinearLayout>
@@ -130,9 +130,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/fondo_tarjeta_transparente"
                 android:orientation="horizontal"
-                android:padding="24dp"
+                android:padding="@dimen/padding_interno_tarjeta"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/margen_inferior_tarjeta"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground">
 
@@ -153,14 +153,14 @@
                         style="@style/EstiloTextoSecundario"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="@dimen/margen_superior_fecha"
                         android:text="@string/fecha_desbloqueo"
                         tools:text="Desbloqueo: 01/01/2028" />
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="44dp"
-                    android:layout_height="44dp"
+                    android:layout_width="@dimen/tamano_icono_tarjeta"
+                    android:layout_height="@dimen/tamano_icono_tarjeta"
                     app:tint="@color/color_acento_interfaz"
                     android:src="@drawable/ic_candado" />
             </LinearLayout>
@@ -171,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/fondo_tarjeta_transparente"
                 android:orientation="vertical"
-                android:padding="24dp"
+                android:padding="@dimen/padding_interno_tarjeta"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground">
 
@@ -198,14 +198,14 @@
                             style="@style/EstiloTextoSecundario"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="@dimen/margen_superior_fecha"
                             android:text="@string/fecha_desbloqueada"
                             tools:text="Desbloqueada: 12/03/2026" />
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_width="44dp"
-                        android:layout_height="44dp"
+                        android:layout_width="@dimen/tamano_icono_tarjeta"
+                        android:layout_height="@dimen/tamano_icono_tarjeta"
                         app:tint="@color/color_acento_interfaz"
                         android:src="@drawable/ic_carta" />
                 </LinearLayout>
@@ -213,9 +213,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="@dimen/margen_superior_desahogo"
                     android:background="@drawable/bg_desahogo"
-                    android:padding="16dp">
+                    android:padding="@dimen/padding_interno_desahogo">
 
                     <TextView
                         style="@style/EstiloTextoSecundario"
@@ -231,14 +231,14 @@
         android:id="@+id/fab_nuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="@dimen/margen_boton_flotante"
+        android:layout_marginBottom="@dimen/margen_boton_flotante"
         app:backgroundTint="@color/color_acento_interfaz"
-        app:tint="#FFFFFF"
+        app:tint="@color/color_texto_primario"
         android:src="@drawable/ic_mas"
         app:shapeAppearanceOverlay="@style/EstiloFABRedondo"
-        app:fabCustomSize="68dp"
-        app:maxImageSize="32dp"
+        app:fabCustomSize="@dimen/tamano_boton_flotante"
+        app:maxImageSize="@dimen/tamano_icono_flotante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

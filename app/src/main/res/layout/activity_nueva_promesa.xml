@@ -13,16 +13,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/color_fondo_principal"
-        android:paddingHorizontal="24dp"
-        android:paddingTop="32dp"
-        android:paddingBottom="20dp"
+        android:paddingHorizontal="@dimen/padding_horizontal_barra"
+        android:paddingTop="@dimen/padding_top_barra"
+        android:paddingBottom="@dimen/padding_bottom_barra"
         android:gravity="center_vertical"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="@dimen/tamano_icono_flecha"
+            android:layout_height="@dimen/tamano_icono_flecha"
+            android:layout_marginEnd="@dimen/margen_fin_flecha"
             android:src="@drawable/ic_flecha"
             app:tint="@color/color_texto_primario"
             android:clickable="true"
@@ -32,7 +32,7 @@
             style="@style/EstiloTituloAiko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32sp"
+            android:textSize="@dimen/texto_titulo_nueva_promesa"
             android:text="@string/nueva_promesa" />
     </LinearLayout>
 
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:clipToPadding="false"
-        android:padding="24dp"
+        android:padding="@dimen/padding_general_formulario"
         app:layout_constraintTop_toBottomOf="@id/top_bar_promesa"
         app:layout_constraintBottom_toTopOf="@id/btn_guardar_container">
 
@@ -53,15 +53,15 @@
             <!-- CAJA DE TEXTO GRANDE -->
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="@dimen/altura_caja_redaccion"
                 android:background="@drawable/fondo_tarjeta_transparente"
-                android:padding="24dp"
+                android:padding="@dimen/padding_interno_tarjeta"
                 android:gravity="top|start"
                 android:hint="@string/escribe_sientes"
                 android:textColorHint="@color/color_texto_secundario"
                 android:textColor="@color/color_texto_primario"
                 style="@style/EstiloTextoSecundario"
-                android:layout_marginBottom="24dp" />
+                android:layout_marginBottom="@dimen/margen_inferior_caja_texto" />
 
             <!-- BOTÓN DE CALENDARIO -->
             <LinearLayout
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/fondo_tarjeta_transparente"
                 android:orientation="horizontal"
-                android:padding="24dp"
+                android:padding="@dimen/padding_interno_tarjeta"
                 android:gravity="center_vertical"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground">
@@ -79,14 +79,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/texto_elegir_fecha"
                     android:text="@string/elegir_fecha" />
 
                 <ImageView
-                    android:layout_width="54dp"
-                    android:layout_height="54dp"
+                    android:layout_width="@dimen/tamano_icono_calendario"
+                    android:layout_height="@dimen/tamano_icono_calendario"
                     android:background="@drawable/bg_icono_superior"
-                    android:padding="12dp"
+                    android:padding="@dimen/padding_icono_calendario"
                     app:tint="@color/color_acento_interfaz"
                     android:src="@drawable/ic_calendario" />
             </LinearLayout>
@@ -98,12 +98,12 @@
         android:id="@+id/btn_guardar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="@dimen/margen_horizontal_boton_guardar"
+        android:layout_marginBottom="@dimen/margen_inferior_boton_guardar"
         android:background="@drawable/bg_boton_rosa"
         android:orientation="horizontal"
-        android:paddingVertical="16dp"
-        android:paddingHorizontal="24dp"
+        android:paddingVertical="@dimen/padding_vertical_boton_guardar"
+        android:paddingHorizontal="@dimen/padding_horizontal_boton_guardar"
         android:gravity="center"
         android:clickable="true"
         android:foreground="?attr/selectableItemBackground"
@@ -113,16 +113,16 @@
             style="@style/EstiloTituloAiko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/margen_fin_texto_guardar"
             android:textColor="@color/color_fondo_principal"
-            android:textSize="24sp"
+            android:textSize="@dimen/texto_boton_guardar"
             android:text="@string/guardar_bloquear" />
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/tamano_icono_candado_guardar"
+            android:layout_height="@dimen/tamano_icono_candado_guardar"
             android:background="@drawable/bg_icono_oscuro"
-            android:padding="12dp"
+            android:padding="@dimen/padding_icono_candado_guardar"
             app:tint="@color/color_acento_interfaz"
             android:src="@drawable/ic_candado" />
     </LinearLayout>
